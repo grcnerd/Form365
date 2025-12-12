@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+    @font-face {
+        font-family: Candara;
+        src: url("file:///C|/Users/smith/Downloads/Tutorial 7 Forms/Tutorial 7 Forms/Candara.ttf");
+    } h1 {
+        text-align: center;
+        font-weight: normal;
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: #C166C4;
+        margin: 36px auto;
+        border: 1px solid #0F0A12;
+        box-shadow: 2px 3px 6px goldenrod;
+        border-radius: 18px;
+        font: 14pt/1.2em Candara;
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+    }
+</style>
+</head>
+
+<body>
+    <form action="#" method="post">
+    <h1>Commission Form</h1>
+	<label for="fname<br>"> First Name</label> <br/>
+	<input type="text" id="fname" value="First Name" /><br/>
+	<label for="lname">Last Name</label><br/>
+	<input type="text" id="lname" value="Last Name" /><br/>
+		
+		<fieldset>
+		<legend> Reason For Contacting</legend>
+    <input type="radio" id="services" value="Design" />
+	<label for="logo design">Logo Design</label>
+	<br/>
+	<input type="radio" name="services" id="illustration" value="Design" />
+	<label for="ilustration">Illustration</label>
+	<br/>
+	<input type="radio" name="services" id="UXD" value="User Experience/Interface Design" />
+	<label for="UI/XD">User Experience/Interface Design</label>
+	</fieldset>
+		<fieldset>
+		<legend> Preferred Program</legend>
+			<input type="checkbox" name="adobe" id="ai" value="adobe illustrator" />
+			<label for="illustrator">Adobe Illustrator</label> <br/>
+			<input type="checkbox" name="adobe" id="ps" value="Photoshop" />
+			<label for="photoshop">Adobe Photoshop</label> <br/>
+			<input type="checkbox" name="clipstudio" id="csp" value="csp" />
+			<label for="clipstudio">Clip Studio Paint</label> <br/>
+			<input type="checkbox" name="procreate" id="pc" value="pc" />
+			<label for="procreate">Procreate</label> <br/>
+					</fieldset>
+<fieldset>
+		<legend> Time Frame</legend>
+	<select>
+	<option value="month"> When do you want to start working with us?</option>
+		<option value="month"> This month</option>
+		<option value="quarter"> This quarter</option>
+		<option value="year"> This year</option>
+		<option value="not sure"> Not sure</option>
+	</select>
+		</fieldset>
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>
